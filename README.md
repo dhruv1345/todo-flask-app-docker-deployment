@@ -1,54 +1,66 @@
-Here's a **README.md** file for Docker installation and running your **Flask To-Do App**:  
+Here's a refined version of your **README.md** with improved clarity, structure, and formatting:  
 
----  
+---
 
 ```markdown
-# To-Do Flask App - Docker Deployment
+# 📝 To-Do Flask App - Docker Deployment
 
-This repository contains a simple Flask-based To-Do application containerized using Docker. Follow the instructions below to set up and run the application.
+This repository contains a **Flask-based To-Do application** that is fully containerized using Docker. Follow the steps below to install and run the application effortlessly.
 
-## Prerequisites
+---
 
-Before running the application, ensure you have the following installed:
+## 🚀 Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/)
+Ensure you have the following installed before proceeding:
+
+- [Docker](https://docs.docker.com/get-docker/) (for containerization)
 - [Docker Compose](https://docs.docker.com/compose/install/) (if using `docker-compose.yml`)
 
-## Installation Steps
+---
 
-### 1. Clone the Repository
-```
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```sh
 git clone git@github.com:dhruv1345/todo-flask-app-docker-deployment.git
 cd todo-flask-app-docker-deployment
 ```
 
-### 2. Build the Docker Image
+### 2️⃣ Build the Docker Image
 ```sh
 docker build -t todo-flask-app .
 ```
 
-### 3. Run the Container
+### 3️⃣ Run the Container
 ```sh
-docker run -p 5000:5000 todo-flask-app
+docker run -d -p 5000:5000 --name todo-app todo-flask-app
 ```
-The application should now be accessible at **http://localhost:5000**.
+The application should now be accessible at **[http://localhost:5000](http://localhost:5000)**.
 
-## Running with Docker Compose (Optional)
-If you have `docker-compose.yml`, you can run:
+---
+
+## 🛠 Running with Docker Compose (Optional)
+If you prefer **Docker Compose**, use:
 ```sh
-docker-compose up --build
+docker-compose up --build -d
 ```
 
-## Stopping the Application
-To stop the container:
+### ⏹️ Stopping the Application
+To stop the running container:
 ```sh
-docker stop <container_id>
+docker stop todo-app
 ```
 Or, if using Docker Compose:
 ```sh
 docker-compose down
 ```
 
-## License
-This project is open-source and available under the MIT License.
+---
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+---
+
+Happy Coding! 🚀✨
 ```
