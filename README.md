@@ -17,7 +17,7 @@ Before running the application, ensure you have the following installed:
 ## Installation Steps
 
 ### 1. Clone the Repository
-```sh
+```
 git clone git@github.com:dhruv1345/todo-flask-app-docker-deployment.git
 cd todo-flask-app-docker-deployment
 ```
